@@ -1,0 +1,8 @@
+{%if schoolist%}
+<ol>
+{% for school in schoolist%}
+<li><a href="/{{school.id}}/">{{school.name}}
+{% endfor%}
+{% else %}
+<p>have no school</p>
+{% endif %}
